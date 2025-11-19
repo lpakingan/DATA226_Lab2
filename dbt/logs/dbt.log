@@ -1,0 +1,652 @@
+[0m16:26:00.925638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016145567380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016145D7B8F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000161444FF5F0>]}
+
+
+============================== 16:26:00.925638 | 1ce96422-fa13-4fef-a935-284a30f71ba0 ==============================
+[0m16:26:00.925638 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m16:26:00.925638 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'profiles_dir': 'C:\\docker\\github\\sjsu-data226-FA25\\stock_analytics', 'no_print': 'None', 'use_colors': 'True', 'write_json': 'True', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'log_path': 'C:\\docker\\github\\sjsu-data226-FA25\\stock_analytics\\logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt clean', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m16:26:01.311021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1ce96422-fa13-4fef-a935-284a30f71ba0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016147052C30>]}
+[0m16:26:01.353838 [debug] [MainThread]: Command `dbt clean` succeeded at 16:26:01.353838 after 0.61 seconds
+[0m16:26:01.353838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001614543B500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000161444FF5F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001614749FE60>]}
+[0m16:26:01.353838 [debug] [MainThread]: Flushing usage events
+[0m16:26:01.750507 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:40:50.672269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76eb4c5d2450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76eb4cdf5610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76eb4cdf7860>]}
+
+
+============================== 19:40:50.697518 | d5390176-d1e0-4711-a990-8e2f0522904a ==============================
+[0m19:40:50.697518 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:40:50.703896 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/opt/airflow/dbt/logs', 'profiles_dir': '/opt/airflow/dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:40:52.374362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd5390176-d1e0-4711-a990-8e2f0522904a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76eb4d4bac00>]}
+[0m19:40:52.428214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd5390176-d1e0-4711-a990-8e2f0522904a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76eb4c50bc80>]}
+[0m19:40:52.430712 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m19:40:52.543363 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m19:40:52.549392 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:40:52.550056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd5390176-d1e0-4711-a990-8e2f0522904a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76eb4c50ba70>]}
+[0m19:40:54.029284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd5390176-d1e0-4711-a990-8e2f0522904a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76eb4cdb5430>]}
+[0m19:40:54.159249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd5390176-d1e0-4711-a990-8e2f0522904a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76eb04758e60>]}
+[0m19:40:54.159876 [info ] [MainThread]: Found 2 models, 1 snapshot, 3 data tests, 1 source, 459 macros
+[0m19:40:54.160708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd5390176-d1e0-4711-a990-8e2f0522904a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76eb0c615070>]}
+[0m19:40:54.162268 [info ] [MainThread]: 
+[0m19:40:54.163117 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:40:54.167840 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_CAMEL'
+[0m19:40:54.181002 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_CAMEL"
+[0m19:40:54.181966 [debug] [ThreadPool]: On list_USER_DB_CAMEL: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "connection_name": "list_USER_DB_CAMEL"} */
+show terse schemas in database USER_DB_CAMEL
+    limit 10000
+[0m19:40:54.182847 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:40:54.985691 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.803 seconds
+[0m19:40:54.987724 [debug] [ThreadPool]: On list_USER_DB_CAMEL: Close
+[0m19:40:55.154901 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_CAMEL, now list_USER_DB_CAMEL_analytics)
+[0m19:40:55.166534 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_CAMEL_analytics"
+[0m19:40:55.168853 [debug] [ThreadPool]: On list_USER_DB_CAMEL_analytics: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "connection_name": "list_USER_DB_CAMEL_analytics"} */
+show objects in USER_DB_CAMEL.analytics limit 10000
+[0m19:40:55.169993 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:40:55.750970 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.581 seconds
+[0m19:40:55.755045 [debug] [ThreadPool]: On list_USER_DB_CAMEL_analytics: Close
+[0m19:40:55.919047 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_CAMEL_analytics, now list_USER_DB_CAMEL_snapshots)
+[0m19:40:55.923710 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_CAMEL_snapshots"
+[0m19:40:55.924411 [debug] [ThreadPool]: On list_USER_DB_CAMEL_snapshots: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "connection_name": "list_USER_DB_CAMEL_snapshots"} */
+show objects in USER_DB_CAMEL.snapshots limit 10000
+[0m19:40:55.924979 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:40:56.540171 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c0807c-0307-10e3-000f-c0df0081c73a
+[0m19:40:56.541072 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m19:40:56.542209 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m19:40:56.542977 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:40:56.543800 [debug] [ThreadPool]: On list_USER_DB_CAMEL_snapshots: Close
+[0m19:40:56.697917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd5390176-d1e0-4711-a990-8e2f0522904a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76eb4d457da0>]}
+[0m19:40:56.700315 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:40:56.701968 [info ] [MainThread]: 
+[0m19:40:56.718071 [debug] [Thread-1 (]: Began running node model.stock_analytics.market_data
+[0m19:40:56.720218 [info ] [Thread-1 (]: 1 of 2 START sql view model analytics.market_data .............................. [RUN]
+[0m19:40:56.722590 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_CAMEL_snapshots, now model.stock_analytics.market_data)
+[0m19:40:56.723685 [debug] [Thread-1 (]: Began compiling node model.stock_analytics.market_data
+[0m19:40:56.734250 [debug] [Thread-1 (]: Writing injected SQL for node "model.stock_analytics.market_data"
+[0m19:40:56.754937 [debug] [Thread-1 (]: Began executing node model.stock_analytics.market_data
+[0m19:40:56.780236 [debug] [Thread-1 (]: Writing runtime sql for node "model.stock_analytics.market_data"
+[0m19:40:56.804209 [debug] [Thread-1 (]: Using snowflake connection "model.stock_analytics.market_data"
+[0m19:40:56.804788 [debug] [Thread-1 (]: On model.stock_analytics.market_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "node_id": "model.stock_analytics.market_data"} */
+create or replace   view USER_DB_CAMEL.analytics.market_data
+  
+   as (
+    SELECT
+    symbol,
+    date,
+    open,
+    close,
+    min as low,
+    max as high,
+    volume
+FROM USER_DB_CAMEL.raw.lab2_market_data
+  );
+[0m19:40:56.805291 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:40:57.464402 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.659 seconds
+[0m19:40:57.492756 [debug] [Thread-1 (]: On model.stock_analytics.market_data: Close
+[0m19:40:57.642861 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5390176-d1e0-4711-a990-8e2f0522904a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76eb079bb0e0>]}
+[0m19:40:57.644882 [info ] [Thread-1 (]: 1 of 2 OK created sql view model analytics.market_data ......................... [[32mSUCCESS 1[0m in 0.92s]
+[0m19:40:57.648185 [debug] [Thread-1 (]: Finished running node model.stock_analytics.market_data
+[0m19:40:57.651455 [debug] [Thread-1 (]: Began running node model.stock_analytics.stock_sma_summary
+[0m19:40:57.653053 [info ] [Thread-1 (]: 2 of 2 START sql table model analytics.stock_sma_summary ....................... [RUN]
+[0m19:40:57.655041 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.stock_analytics.market_data, now model.stock_analytics.stock_sma_summary)
+[0m19:40:57.657136 [debug] [Thread-1 (]: Began compiling node model.stock_analytics.stock_sma_summary
+[0m19:40:57.661771 [debug] [Thread-1 (]: Writing injected SQL for node "model.stock_analytics.stock_sma_summary"
+[0m19:40:57.683150 [debug] [Thread-1 (]: Began executing node model.stock_analytics.stock_sma_summary
+[0m19:40:57.702026 [debug] [Thread-1 (]: Writing runtime sql for node "model.stock_analytics.stock_sma_summary"
+[0m19:40:57.711488 [debug] [Thread-1 (]: Using snowflake connection "model.stock_analytics.stock_sma_summary"
+[0m19:40:57.712465 [debug] [Thread-1 (]: On model.stock_analytics.stock_sma_summary: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "node_id": "model.stock_analytics.stock_sma_summary"} */
+create or replace transient table USER_DB_CAMEL.analytics.stock_sma_summary
+         as
+        (WITH base AS (
+
+    SELECT
+        symbol,
+        date,
+        close
+    FROM USER_DB_CAMEL.analytics.market_data
+
+),
+
+stock_day AS (
+
+    SELECT
+        symbol,
+        date,
+        close,
+        ROW_NUMBER() OVER (
+            PARTITION BY symbol
+            ORDER BY date
+        ) AS row_number
+    FROM base
+
+),
+
+stock_sma AS (
+
+    SELECT
+        symbol,
+        date,
+        close,
+
+        CASE
+            WHEN row_number >= 7 THEN
+                AVG(close) OVER (
+                    PARTITION BY symbol
+                    ORDER BY date
+                    ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+                )
+        END AS sma_7d,
+
+        CASE
+            WHEN row_number >= 30 THEN
+                AVG(close) OVER (
+                    PARTITION BY symbol
+                    ORDER BY date
+                    ROWS BETWEEN 29 PRECEDING AND CURRENT ROW
+                )
+        END AS sma_30d
+
+    FROM stock_day
+)
+
+SELECT
+    symbol,
+    date,
+    close,
+    sma_7d,
+    sma_30d
+FROM stock_sma;
+[0m19:40:57.712984 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:40:58.297764 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01c0807c-0307-1131-000f-c0df0081e66e
+[0m19:40:58.298656 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 61 at position 14 unexpected ';'.
+[0m19:40:58.299450 [debug] [Thread-1 (]: On model.stock_analytics.stock_sma_summary: Close
+[0m19:40:58.507804 [debug] [Thread-1 (]: Database Error in model stock_sma_summary (models/output/stock_sma_summary.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 61 at position 14 unexpected ';'.
+  compiled code at target/run/stock_analytics/models/output/stock_sma_summary.sql
+[0m19:40:58.514315 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5390176-d1e0-4711-a990-8e2f0522904a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76eb0779f350>]}
+[0m19:40:58.515340 [error] [Thread-1 (]: 2 of 2 ERROR creating sql table model analytics.stock_sma_summary .............. [[31mERROR[0m in 0.86s]
+[0m19:40:58.517046 [debug] [Thread-1 (]: Finished running node model.stock_analytics.stock_sma_summary
+[0m19:40:58.521464 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:40:58.523582 [debug] [MainThread]: Connection 'model.stock_analytics.stock_sma_summary' was properly closed.
+[0m19:40:58.525265 [info ] [MainThread]: 
+[0m19:40:58.526976 [info ] [MainThread]: Finished running 1 view model, 1 table model in 0 hours 0 minutes and 4.36 seconds (4.36s).
+[0m19:40:58.529430 [debug] [MainThread]: Command end result
+[0m19:40:58.590946 [info ] [MainThread]: 
+[0m19:40:58.591719 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m19:40:58.592649 [info ] [MainThread]: 
+[0m19:40:58.593310 [error] [MainThread]:   Database Error in model stock_sma_summary (models/output/stock_sma_summary.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 61 at position 14 unexpected ';'.
+  compiled code at target/run/stock_analytics/models/output/stock_sma_summary.sql
+[0m19:40:58.594002 [info ] [MainThread]: 
+[0m19:40:58.599256 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[0m19:40:58.601255 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 8.291022, "process_user_time": 5.92317, "process_kernel_time": 1.489672, "process_mem_max_rss": "214184", "process_in_blocks": "125368", "process_out_blocks": "1448", "command_success": false}
+[0m19:40:58.601924 [debug] [MainThread]: Command `dbt run` failed at 19:40:58.601813 after 8.29 seconds
+[0m19:40:58.602415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76eb4c9b7260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76eb0d9347a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76eb4c61ba10>]}
+[0m19:40:58.602980 [debug] [MainThread]: Flushing usage events
+[0m19:42:21.002279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628cf7c9bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628d21e8050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628cf7c9a90>]}
+
+
+============================== 19:42:21.020919 | 76765e52-7282-4849-9deb-2a5bc6817433 ==============================
+[0m19:42:21.020919 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:42:21.021565 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/opt/airflow/dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:42:22.542772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '76765e52-7282-4849-9deb-2a5bc6817433', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628d06c3710>]}
+[0m19:42:22.593036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '76765e52-7282-4849-9deb-2a5bc6817433', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76288a9033b0>]}
+[0m19:42:22.595062 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m19:42:22.695767 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m19:42:22.936540 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:42:22.937889 [debug] [MainThread]: Partial parsing: updated file: stock_analytics://models/output/stock_sma_summary.sql
+[0m19:42:23.300232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '76765e52-7282-4849-9deb-2a5bc6817433', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628cf7f8740>]}
+[0m19:42:23.435731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '76765e52-7282-4849-9deb-2a5bc6817433', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76288a7e6b40>]}
+[0m19:42:23.436372 [info ] [MainThread]: Found 2 models, 1 snapshot, 3 data tests, 1 source, 459 macros
+[0m19:42:23.437660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '76765e52-7282-4849-9deb-2a5bc6817433', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628836d60c0>]}
+[0m19:42:23.440343 [info ] [MainThread]: 
+[0m19:42:23.441616 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:42:23.449729 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_CAMEL'
+[0m19:42:23.460640 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_CAMEL"
+[0m19:42:23.461322 [debug] [ThreadPool]: On list_USER_DB_CAMEL: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "connection_name": "list_USER_DB_CAMEL"} */
+show terse schemas in database USER_DB_CAMEL
+    limit 10000
+[0m19:42:23.461941 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:42:24.234798 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.773 seconds
+[0m19:42:24.244336 [debug] [ThreadPool]: On list_USER_DB_CAMEL: Close
+[0m19:42:24.417147 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_CAMEL, now list_USER_DB_CAMEL_analytics)
+[0m19:42:24.434092 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_CAMEL_analytics"
+[0m19:42:24.435135 [debug] [ThreadPool]: On list_USER_DB_CAMEL_analytics: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "connection_name": "list_USER_DB_CAMEL_analytics"} */
+show objects in USER_DB_CAMEL.analytics limit 10000
+[0m19:42:24.435975 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:42:25.077649 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.642 seconds
+[0m19:42:25.082470 [debug] [ThreadPool]: On list_USER_DB_CAMEL_analytics: Close
+[0m19:42:25.219165 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_CAMEL_analytics, now list_USER_DB_CAMEL_snapshots)
+[0m19:42:25.226410 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_CAMEL_snapshots"
+[0m19:42:25.227565 [debug] [ThreadPool]: On list_USER_DB_CAMEL_snapshots: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "connection_name": "list_USER_DB_CAMEL_snapshots"} */
+show objects in USER_DB_CAMEL.snapshots limit 10000
+[0m19:42:25.228457 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:42:25.622034 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c0807e-0307-1308-000f-c0df00831146
+[0m19:42:25.623618 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m19:42:25.625191 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m19:42:25.626453 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:42:25.627572 [debug] [ThreadPool]: On list_USER_DB_CAMEL_snapshots: Close
+[0m19:42:25.733731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '76765e52-7282-4849-9deb-2a5bc6817433', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628835ad370>]}
+[0m19:42:25.735027 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:42:25.736204 [info ] [MainThread]: 
+[0m19:42:25.750268 [debug] [Thread-1 (]: Began running node model.stock_analytics.market_data
+[0m19:42:25.751106 [info ] [Thread-1 (]: 1 of 2 START sql view model analytics.market_data .............................. [RUN]
+[0m19:42:25.752051 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_CAMEL_snapshots, now model.stock_analytics.market_data)
+[0m19:42:25.752689 [debug] [Thread-1 (]: Began compiling node model.stock_analytics.market_data
+[0m19:42:25.758776 [debug] [Thread-1 (]: Writing injected SQL for node "model.stock_analytics.market_data"
+[0m19:42:25.768238 [debug] [Thread-1 (]: Began executing node model.stock_analytics.market_data
+[0m19:42:25.794615 [debug] [Thread-1 (]: Writing runtime sql for node "model.stock_analytics.market_data"
+[0m19:42:25.801813 [debug] [Thread-1 (]: Using snowflake connection "model.stock_analytics.market_data"
+[0m19:42:25.802450 [debug] [Thread-1 (]: On model.stock_analytics.market_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "node_id": "model.stock_analytics.market_data"} */
+create or replace   view USER_DB_CAMEL.analytics.market_data
+  
+   as (
+    SELECT
+    symbol,
+    date,
+    open,
+    close,
+    min as low,
+    max as high,
+    volume
+FROM USER_DB_CAMEL.raw.lab2_market_data
+  );
+[0m19:42:25.803076 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:42:26.404693 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.601 seconds
+[0m19:42:26.431646 [debug] [Thread-1 (]: On model.stock_analytics.market_data: Close
+[0m19:42:26.571928 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76765e52-7282-4849-9deb-2a5bc6817433', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76288ab12b70>]}
+[0m19:42:26.574189 [info ] [Thread-1 (]: 1 of 2 OK created sql view model analytics.market_data ......................... [[32mSUCCESS 1[0m in 0.82s]
+[0m19:42:26.575819 [debug] [Thread-1 (]: Finished running node model.stock_analytics.market_data
+[0m19:42:26.578587 [debug] [Thread-1 (]: Began running node model.stock_analytics.stock_sma_summary
+[0m19:42:26.579819 [info ] [Thread-1 (]: 2 of 2 START sql table model analytics.stock_sma_summary ....................... [RUN]
+[0m19:42:26.581102 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.stock_analytics.market_data, now model.stock_analytics.stock_sma_summary)
+[0m19:42:26.582037 [debug] [Thread-1 (]: Began compiling node model.stock_analytics.stock_sma_summary
+[0m19:42:26.586454 [debug] [Thread-1 (]: Writing injected SQL for node "model.stock_analytics.stock_sma_summary"
+[0m19:42:26.599917 [debug] [Thread-1 (]: Began executing node model.stock_analytics.stock_sma_summary
+[0m19:42:26.615615 [debug] [Thread-1 (]: Writing runtime sql for node "model.stock_analytics.stock_sma_summary"
+[0m19:42:26.622005 [debug] [Thread-1 (]: Using snowflake connection "model.stock_analytics.stock_sma_summary"
+[0m19:42:26.622508 [debug] [Thread-1 (]: On model.stock_analytics.stock_sma_summary: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "node_id": "model.stock_analytics.stock_sma_summary"} */
+create or replace transient table USER_DB_CAMEL.analytics.stock_sma_summary
+         as
+        (WITH base AS (
+
+    SELECT
+        symbol,
+        date,
+        close
+    FROM USER_DB_CAMEL.analytics.market_data
+
+),
+
+stock_day AS (
+
+    SELECT
+        symbol,
+        date,
+        close,
+        ROW_NUMBER() OVER (
+            PARTITION BY symbol
+            ORDER BY date
+        ) AS row_number
+    FROM base
+
+),
+
+stock_sma AS (
+
+    SELECT
+        symbol,
+        date,
+        close,
+
+        CASE
+            WHEN row_number >= 7 THEN
+                AVG(close) OVER (
+                    PARTITION BY symbol
+                    ORDER BY date
+                    ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+                )
+        END AS sma_7d,
+
+        CASE
+            WHEN row_number >= 30 THEN
+                AVG(close) OVER (
+                    PARTITION BY symbol
+                    ORDER BY date
+                    ROWS BETWEEN 29 PRECEDING AND CURRENT ROW
+                )
+        END AS sma_30d
+
+    FROM stock_day
+)
+
+SELECT
+    symbol,
+    date,
+    close,
+    sma_7d,
+    sma_30d
+FROM stock_sma
+        );
+[0m19:42:26.623050 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:42:28.980235 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.357 seconds
+[0m19:42:28.982245 [debug] [Thread-1 (]: On model.stock_analytics.stock_sma_summary: Close
+[0m19:42:29.096037 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '76765e52-7282-4849-9deb-2a5bc6817433', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x762882bbef60>]}
+[0m19:42:29.098052 [info ] [Thread-1 (]: 2 of 2 OK created sql table model analytics.stock_sma_summary .................. [[32mSUCCESS 1[0m in 2.51s]
+[0m19:42:29.100033 [debug] [Thread-1 (]: Finished running node model.stock_analytics.stock_sma_summary
+[0m19:42:29.103832 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:42:29.104932 [debug] [MainThread]: Connection 'model.stock_analytics.stock_sma_summary' was properly closed.
+[0m19:42:29.105942 [info ] [MainThread]: 
+[0m19:42:29.106765 [info ] [MainThread]: Finished running 1 view model, 1 table model in 0 hours 0 minutes and 5.66 seconds (5.66s).
+[0m19:42:29.108258 [debug] [MainThread]: Command end result
+[0m19:42:29.161396 [info ] [MainThread]: 
+[0m19:42:29.162459 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:42:29.163329 [info ] [MainThread]: 
+[0m19:42:29.164312 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m19:42:29.166246 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 8.228463, "process_user_time": 4.706223, "process_kernel_time": 1.663406, "process_mem_max_rss": "213836", "process_in_blocks": "117440", "process_out_blocks": "8"}
+[0m19:42:29.167153 [debug] [MainThread]: Command `dbt run` succeeded at 19:42:29.167036 after 8.23 seconds
+[0m19:42:29.168063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628d21e8050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628cfbcef00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7628836364b0>]}
+[0m19:42:29.169022 [debug] [MainThread]: Flushing usage events
+[0m19:42:32.950186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798db571b530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798db5d03fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798db54f6000>]}
+
+
+============================== 19:42:32.955818 | 37d372ca-5289-49d7-8c81-f45772f6e50d ==============================
+[0m19:42:32.955818 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:42:32.956958 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/opt/airflow/dbt/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt test --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt', 'send_anonymous_usage_stats': 'True'}
+[0m19:42:33.913357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '37d372ca-5289-49d7-8c81-f45772f6e50d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798db63a1d30>]}
+[0m19:42:33.961634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '37d372ca-5289-49d7-8c81-f45772f6e50d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798db63a1d30>]}
+[0m19:42:33.963246 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m19:42:34.062292 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m19:42:34.610140 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:42:34.611025 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:42:34.655892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '37d372ca-5289-49d7-8c81-f45772f6e50d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798d745b07d0>]}
+[0m19:42:34.785919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '37d372ca-5289-49d7-8c81-f45772f6e50d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798d741eaea0>]}
+[0m19:42:34.786540 [info ] [MainThread]: Found 2 models, 1 snapshot, 3 data tests, 1 source, 459 macros
+[0m19:42:34.787098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '37d372ca-5289-49d7-8c81-f45772f6e50d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798d74301b80>]}
+[0m19:42:34.788636 [info ] [MainThread]: 
+[0m19:42:34.789806 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:42:34.793397 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_CAMEL_analytics'
+[0m19:42:34.809355 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_CAMEL_analytics"
+[0m19:42:34.810197 [debug] [ThreadPool]: On list_USER_DB_CAMEL_analytics: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "connection_name": "list_USER_DB_CAMEL_analytics"} */
+show objects in USER_DB_CAMEL.analytics limit 10000
+[0m19:42:34.811512 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:42:35.323152 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.512 seconds
+[0m19:42:35.328973 [debug] [ThreadPool]: On list_USER_DB_CAMEL_analytics: Close
+[0m19:42:35.464509 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_CAMEL_analytics, now list_USER_DB_CAMEL_snapshots)
+[0m19:42:35.467354 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_CAMEL_snapshots"
+[0m19:42:35.467850 [debug] [ThreadPool]: On list_USER_DB_CAMEL_snapshots: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "connection_name": "list_USER_DB_CAMEL_snapshots"} */
+show objects in USER_DB_CAMEL.snapshots limit 10000
+[0m19:42:35.468362 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:42:36.003599 [debug] [ThreadPool]: Snowflake adapter: Snowflake query id: 01c0807e-0307-10e3-000f-c0df0081c73e
+[0m19:42:36.004385 [debug] [ThreadPool]: Snowflake adapter: Snowflake error: 002043 (02000): SQL compilation error:
+Object does not exist, or operation cannot be performed.
+[0m19:42:36.005166 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_relations_without_caching
+[0m19:42:36.007889 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m19:42:36.008953 [debug] [ThreadPool]: On list_USER_DB_CAMEL_snapshots: Close
+[0m19:42:36.181265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '37d372ca-5289-49d7-8c81-f45772f6e50d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798db571a2d0>]}
+[0m19:42:36.183947 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:42:36.186851 [info ] [MainThread]: 
+[0m19:42:36.198883 [debug] [Thread-1 (]: Began running node test.stock_analytics.not_null_stock_sma_summary_close.d0e71d1bb7
+[0m19:42:36.199602 [info ] [Thread-1 (]: 1 of 3 START test not_null_stock_sma_summary_close ............................. [RUN]
+[0m19:42:36.200344 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_CAMEL_snapshots, now test.stock_analytics.not_null_stock_sma_summary_close.d0e71d1bb7)
+[0m19:42:36.200967 [debug] [Thread-1 (]: Began compiling node test.stock_analytics.not_null_stock_sma_summary_close.d0e71d1bb7
+[0m19:42:36.215580 [debug] [Thread-1 (]: Writing injected SQL for node "test.stock_analytics.not_null_stock_sma_summary_close.d0e71d1bb7"
+[0m19:42:36.231970 [debug] [Thread-1 (]: Began executing node test.stock_analytics.not_null_stock_sma_summary_close.d0e71d1bb7
+[0m19:42:36.251329 [debug] [Thread-1 (]: Writing runtime sql for node "test.stock_analytics.not_null_stock_sma_summary_close.d0e71d1bb7"
+[0m19:42:36.263726 [debug] [Thread-1 (]: Using snowflake connection "test.stock_analytics.not_null_stock_sma_summary_close.d0e71d1bb7"
+[0m19:42:36.264358 [debug] [Thread-1 (]: On test.stock_analytics.not_null_stock_sma_summary_close.d0e71d1bb7: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "node_id": "test.stock_analytics.not_null_stock_sma_summary_close.d0e71d1bb7"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select close
+from USER_DB_CAMEL.analytics.stock_sma_summary
+where close is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:42:36.264911 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:42:36.804302 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.539 seconds
+[0m19:42:36.832401 [debug] [Thread-1 (]: On test.stock_analytics.not_null_stock_sma_summary_close.d0e71d1bb7: Close
+[0m19:42:36.975881 [info ] [Thread-1 (]: 1 of 3 PASS not_null_stock_sma_summary_close ................................... [[32mPASS[0m in 0.77s]
+[0m19:42:36.978423 [debug] [Thread-1 (]: Finished running node test.stock_analytics.not_null_stock_sma_summary_close.d0e71d1bb7
+[0m19:42:36.980361 [debug] [Thread-1 (]: Began running node test.stock_analytics.not_null_stock_sma_summary_date.e44cfec08a
+[0m19:42:36.981594 [info ] [Thread-1 (]: 2 of 3 START test not_null_stock_sma_summary_date .............................. [RUN]
+[0m19:42:36.982964 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.stock_analytics.not_null_stock_sma_summary_close.d0e71d1bb7, now test.stock_analytics.not_null_stock_sma_summary_date.e44cfec08a)
+[0m19:42:36.984207 [debug] [Thread-1 (]: Began compiling node test.stock_analytics.not_null_stock_sma_summary_date.e44cfec08a
+[0m19:42:36.993730 [debug] [Thread-1 (]: Writing injected SQL for node "test.stock_analytics.not_null_stock_sma_summary_date.e44cfec08a"
+[0m19:42:37.008903 [debug] [Thread-1 (]: Began executing node test.stock_analytics.not_null_stock_sma_summary_date.e44cfec08a
+[0m19:42:37.012651 [debug] [Thread-1 (]: Writing runtime sql for node "test.stock_analytics.not_null_stock_sma_summary_date.e44cfec08a"
+[0m19:42:37.017867 [debug] [Thread-1 (]: Using snowflake connection "test.stock_analytics.not_null_stock_sma_summary_date.e44cfec08a"
+[0m19:42:37.018390 [debug] [Thread-1 (]: On test.stock_analytics.not_null_stock_sma_summary_date.e44cfec08a: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "node_id": "test.stock_analytics.not_null_stock_sma_summary_date.e44cfec08a"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select date
+from USER_DB_CAMEL.analytics.stock_sma_summary
+where date is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:42:37.018945 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:42:37.663183 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.644 seconds
+[0m19:42:37.667979 [debug] [Thread-1 (]: On test.stock_analytics.not_null_stock_sma_summary_date.e44cfec08a: Close
+[0m19:42:37.807661 [info ] [Thread-1 (]: 2 of 3 PASS not_null_stock_sma_summary_date .................................... [[32mPASS[0m in 0.82s]
+[0m19:42:37.809705 [debug] [Thread-1 (]: Finished running node test.stock_analytics.not_null_stock_sma_summary_date.e44cfec08a
+[0m19:42:37.810878 [debug] [Thread-1 (]: Began running node test.stock_analytics.not_null_stock_sma_summary_symbol.e2f4641f53
+[0m19:42:37.812132 [info ] [Thread-1 (]: 3 of 3 START test not_null_stock_sma_summary_symbol ............................ [RUN]
+[0m19:42:37.812881 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.stock_analytics.not_null_stock_sma_summary_date.e44cfec08a, now test.stock_analytics.not_null_stock_sma_summary_symbol.e2f4641f53)
+[0m19:42:37.814004 [debug] [Thread-1 (]: Began compiling node test.stock_analytics.not_null_stock_sma_summary_symbol.e2f4641f53
+[0m19:42:37.821144 [debug] [Thread-1 (]: Writing injected SQL for node "test.stock_analytics.not_null_stock_sma_summary_symbol.e2f4641f53"
+[0m19:42:37.833366 [debug] [Thread-1 (]: Began executing node test.stock_analytics.not_null_stock_sma_summary_symbol.e2f4641f53
+[0m19:42:37.835207 [debug] [Thread-1 (]: Writing runtime sql for node "test.stock_analytics.not_null_stock_sma_summary_symbol.e2f4641f53"
+[0m19:42:37.849698 [debug] [Thread-1 (]: Using snowflake connection "test.stock_analytics.not_null_stock_sma_summary_symbol.e2f4641f53"
+[0m19:42:37.850349 [debug] [Thread-1 (]: On test.stock_analytics.not_null_stock_sma_summary_symbol.e2f4641f53: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "node_id": "test.stock_analytics.not_null_stock_sma_summary_symbol.e2f4641f53"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select symbol
+from USER_DB_CAMEL.analytics.stock_sma_summary
+where symbol is null
+
+
+
+      
+    ) dbt_internal_test
+[0m19:42:37.851174 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:42:38.412232 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.561 seconds
+[0m19:42:38.416815 [debug] [Thread-1 (]: On test.stock_analytics.not_null_stock_sma_summary_symbol.e2f4641f53: Close
+[0m19:42:38.522602 [info ] [Thread-1 (]: 3 of 3 PASS not_null_stock_sma_summary_symbol .................................. [[32mPASS[0m in 0.71s]
+[0m19:42:38.528218 [debug] [Thread-1 (]: Finished running node test.stock_analytics.not_null_stock_sma_summary_symbol.e2f4641f53
+[0m19:42:38.530412 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:42:38.531242 [debug] [MainThread]: Connection 'test.stock_analytics.not_null_stock_sma_summary_symbol.e2f4641f53' was properly closed.
+[0m19:42:38.531907 [info ] [MainThread]: 
+[0m19:42:38.532720 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 3.74 seconds (3.74s).
+[0m19:42:38.534308 [debug] [MainThread]: Command end result
+[0m19:42:38.593626 [info ] [MainThread]: 
+[0m19:42:38.594310 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:42:38.594917 [info ] [MainThread]: 
+[0m19:42:38.595429 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m19:42:38.596818 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 5.7057223, "process_user_time": 4.281371, "process_kernel_time": 1.50608, "process_mem_max_rss": "210508", "process_in_blocks": "1656", "process_out_blocks": "8"}
+[0m19:42:38.597902 [debug] [MainThread]: Command `dbt test` succeeded at 19:42:38.597693 after 5.71 seconds
+[0m19:42:38.598707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798db5658680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798db57a3a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x798db562be60>]}
+[0m19:42:38.599388 [debug] [MainThread]: Flushing usage events
+[0m19:42:42.986623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701bbd721490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701bbd727230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701bbd722870>]}
+
+
+============================== 19:42:42.993083 | 040d7c63-1590-46c2-b276-3921869ae7da ==============================
+[0m19:42:42.993083 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:42:42.994356 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/opt/airflow/dbt/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt snapshot --profiles-dir /opt/airflow/dbt --project-dir /opt/airflow/dbt', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:42:43.944622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '040d7c63-1590-46c2-b276-3921869ae7da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701b7ca6ed50>]}
+[0m19:42:43.994884 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '040d7c63-1590-46c2-b276-3921869ae7da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701bc15229c0>]}
+[0m19:42:43.996755 [info ] [MainThread]: Registered adapter: snowflake=1.8.3
+[0m19:42:44.100165 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m19:42:44.304323 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:42:44.304996 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:42:44.351893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '040d7c63-1590-46c2-b276-3921869ae7da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701b7c798500>]}
+[0m19:42:44.489557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '040d7c63-1590-46c2-b276-3921869ae7da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701b7c474380>]}
+[0m19:42:44.491160 [info ] [MainThread]: Found 2 models, 1 snapshot, 3 data tests, 1 source, 459 macros
+[0m19:42:44.492004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '040d7c63-1590-46c2-b276-3921869ae7da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701b7c492e40>]}
+[0m19:42:44.493882 [info ] [MainThread]: 
+[0m19:42:44.494901 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m19:42:44.496600 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_USER_DB_CAMEL'
+[0m19:42:44.511756 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_CAMEL"
+[0m19:42:44.512541 [debug] [ThreadPool]: On list_USER_DB_CAMEL: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "connection_name": "list_USER_DB_CAMEL"} */
+show terse schemas in database USER_DB_CAMEL
+    limit 10000
+[0m19:42:44.513516 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:42:45.045576 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.532 seconds
+[0m19:42:45.049549 [debug] [ThreadPool]: On list_USER_DB_CAMEL: Close
+[0m19:42:45.257373 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_CAMEL, now create_USER_DB_CAMEL_snapshots)
+[0m19:42:45.260506 [debug] [ThreadPool]: Creating schema "database: "USER_DB_CAMEL"
+schema: "snapshots"
+"
+[0m19:42:45.269208 [debug] [ThreadPool]: Using snowflake connection "create_USER_DB_CAMEL_snapshots"
+[0m19:42:45.270453 [debug] [ThreadPool]: On create_USER_DB_CAMEL_snapshots: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "connection_name": "create_USER_DB_CAMEL_snapshots"} */
+create schema if not exists USER_DB_CAMEL.snapshots
+[0m19:42:45.271364 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:42:45.696225 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.425 seconds
+[0m19:42:45.698695 [debug] [ThreadPool]: On create_USER_DB_CAMEL_snapshots: Close
+[0m19:42:45.815028 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_USER_DB_CAMEL_snapshots, now list_USER_DB_CAMEL_snapshots)
+[0m19:42:45.823695 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_CAMEL_snapshots"
+[0m19:42:45.824884 [debug] [ThreadPool]: On list_USER_DB_CAMEL_snapshots: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "connection_name": "list_USER_DB_CAMEL_snapshots"} */
+show objects in USER_DB_CAMEL.snapshots limit 10000
+[0m19:42:45.825485 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:42:46.546660 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.721 seconds
+[0m19:42:46.548716 [debug] [ThreadPool]: On list_USER_DB_CAMEL_snapshots: Close
+[0m19:42:46.648166 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_USER_DB_CAMEL_snapshots, now list_USER_DB_CAMEL_analytics)
+[0m19:42:46.651254 [debug] [ThreadPool]: Using snowflake connection "list_USER_DB_CAMEL_analytics"
+[0m19:42:46.652084 [debug] [ThreadPool]: On list_USER_DB_CAMEL_analytics: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "connection_name": "list_USER_DB_CAMEL_analytics"} */
+show objects in USER_DB_CAMEL.analytics limit 10000
+[0m19:42:46.652897 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:42:47.130728 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.478 seconds
+[0m19:42:47.133131 [debug] [ThreadPool]: On list_USER_DB_CAMEL_analytics: Close
+[0m19:42:47.257358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '040d7c63-1590-46c2-b276-3921869ae7da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701b7c3ea390>]}
+[0m19:42:47.260180 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:42:47.263035 [info ] [MainThread]: 
+[0m19:42:47.273648 [debug] [Thread-1 (]: Began running node snapshot.stock_analytics.snapshot_stock_sma_summary
+[0m19:42:47.276843 [info ] [Thread-1 (]: 1 of 1 START snapshot snapshots.snapshot_stock_sma_summary ..................... [RUN]
+[0m19:42:47.278574 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_USER_DB_CAMEL_analytics, now snapshot.stock_analytics.snapshot_stock_sma_summary)
+[0m19:42:47.279110 [debug] [Thread-1 (]: Began compiling node snapshot.stock_analytics.snapshot_stock_sma_summary
+[0m19:42:47.285261 [debug] [Thread-1 (]: Began executing node snapshot.stock_analytics.snapshot_stock_sma_summary
+[0m19:42:47.359839 [debug] [Thread-1 (]: Using snowflake connection "snapshot.stock_analytics.snapshot_stock_sma_summary"
+[0m19:42:47.360829 [debug] [Thread-1 (]: On snapshot.stock_analytics.snapshot_stock_sma_summary: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "node_id": "snapshot.stock_analytics.snapshot_stock_sma_summary"} */
+/* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "node_id": "snapshot.stock_analytics.snapshot_stock_sma_summary"} */
+select * from (
+        
+    
+
+    select *,
+        md5(coalesce(cast(symbol || ' ' || date as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+        
+  
+  coalesce(nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))), null)
+  as dbt_valid_to
+
+    from (
+        
+
+
+
+SELECT * FROM USER_DB_CAMEL.analytics.stock_sma_summary
+
+    ) sbq
+
+
+
+    ) as __dbt_sbq
+    where false
+    limit 0
+[0m19:42:47.361921 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:42:48.025874 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.664 seconds
+[0m19:42:48.030831 [debug] [Thread-1 (]: Using snowflake connection "snapshot.stock_analytics.snapshot_stock_sma_summary"
+[0m19:42:48.031885 [debug] [Thread-1 (]: On snapshot.stock_analytics.snapshot_stock_sma_summary: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "node_id": "snapshot.stock_analytics.snapshot_stock_sma_summary"} */
+/* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "node_id": "snapshot.stock_analytics.snapshot_stock_sma_summary"} */
+select * from (
+        select to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_snapshot_time
+    ) as __dbt_sbq
+    where false
+    limit 0
+[0m19:42:48.137170 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.104 seconds
+[0m19:42:48.142363 [debug] [Thread-1 (]: Writing runtime sql for node "snapshot.stock_analytics.snapshot_stock_sma_summary"
+[0m19:42:48.194165 [debug] [Thread-1 (]: Using snowflake connection "snapshot.stock_analytics.snapshot_stock_sma_summary"
+[0m19:42:48.196006 [debug] [Thread-1 (]: On snapshot.stock_analytics.snapshot_stock_sma_summary: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "stock_analytics", "target_name": "dev", "node_id": "snapshot.stock_analytics.snapshot_stock_sma_summary"} */
+create or replace transient table USER_DB_CAMEL.snapshots.snapshot_stock_sma_summary
+         as
+        (
+    
+
+    select *,
+        md5(coalesce(cast(symbol || ' ' || date as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+        
+  
+  coalesce(nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))), null)
+  as dbt_valid_to
+
+    from (
+        
+
+
+
+SELECT * FROM USER_DB_CAMEL.analytics.stock_sma_summary
+
+    ) sbq
+
+
+
+        );
+[0m19:42:49.144636 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.947 seconds
+[0m19:42:49.181518 [debug] [Thread-1 (]: On snapshot.stock_analytics.snapshot_stock_sma_summary: Close
+[0m19:42:49.307140 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '040d7c63-1590-46c2-b276-3921869ae7da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701b7ca6e0f0>]}
+[0m19:42:49.309834 [info ] [Thread-1 (]: 1 of 1 OK snapshotted snapshots.snapshot_stock_sma_summary ..................... [[32mSUCCESS 1[0m in 2.03s]
+[0m19:42:49.311952 [debug] [Thread-1 (]: Finished running node snapshot.stock_analytics.snapshot_stock_sma_summary
+[0m19:42:49.315509 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:42:49.316567 [debug] [MainThread]: Connection 'snapshot.stock_analytics.snapshot_stock_sma_summary' was properly closed.
+[0m19:42:49.317462 [info ] [MainThread]: 
+[0m19:42:49.318650 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 4.82 seconds (4.82s).
+[0m19:42:49.320277 [debug] [MainThread]: Command end result
+[0m19:42:49.364988 [info ] [MainThread]: 
+[0m19:42:49.365724 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:42:49.366190 [info ] [MainThread]: 
+[0m19:42:49.366639 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m19:42:49.367512 [debug] [MainThread]: Resource report: {"command_name": "snapshot", "command_success": true, "command_wall_clock_time": 6.438745, "process_user_time": 4.298591, "process_kernel_time": 1.518835, "process_mem_max_rss": "209428", "process_in_blocks": "8", "process_out_blocks": "8"}
+[0m19:42:49.368119 [debug] [MainThread]: Command `dbt snapshot` succeeded at 19:42:49.368026 after 6.44 seconds
+[0m19:42:49.368577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701bbd7209e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701b7c3758e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x701bbd8bb680>]}
+[0m19:42:49.369025 [debug] [MainThread]: Flushing usage events

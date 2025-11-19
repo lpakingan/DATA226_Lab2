@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: market_data
+    description: "Raw market data without any transformations."
+
+  - name: stock_sma_summary
+    description: "Model that calculates the 7-day and 30-day moving averages per stock and date."
+    columns:
+      - name: symbol
+        description: "Stock symbol (part of unique indicator for stock entry)."
+        data_tests:
+          - not_null
+
+      - name: date
+        description: "Trading date for the price (part of unique indicator for stock entry)."
+        data_tests:
+          - not_null
+
+      - name: close
+        description: "Daily closing price."
+        data_tests:
+          - not_null
+
+      - name: sma_7d
+        description: "7-day simple moving average of close_price (null before day 7)."
+
+      - name: sma_30d
+        description: "30-day simple moving average of close_price (null before day 30)."

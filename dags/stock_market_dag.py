@@ -81,11 +81,11 @@ def load(stock_data, target_table):
 # DAG
 with DAG(
     dag_id = '180DayStockData',
-    start_date = datetime(2025,11,11),
+    start_date = datetime(2025,11,18),
     catchup = False,
     max_active_runs = 1,
     tags = ['ETL'],
-    schedule = None
+    schedule = '0 0 * * *'
 ) as dag:
     target_table = "raw.lab2_market_data"
     symbol1 = Variable.get("first_stock_symbol")

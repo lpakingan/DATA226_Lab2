@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    database: "{{ target.database }}"
+    schema: raw
+    description: "Schema which stores raw tables (ETL)"
+    tables:
+      - name: lab2_market_data
+        identifier: lab2_market_data
+        description: "Daily open and close prices for two stocks over 180 days."
