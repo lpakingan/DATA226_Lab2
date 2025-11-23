@@ -1,0 +1,9 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Airflow logs
+logs/
+
+# Log files anywhere
+*.log
