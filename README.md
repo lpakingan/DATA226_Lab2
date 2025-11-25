@@ -28,7 +28,7 @@ The pipeline includes:
    - Cleans the data using Pandas  
    - Loads the data into Snowflake (`raw.lab2_market_data`)
 
-- **ELT DAG (`dbtDAG`)**
+- **ELT DAG (`dbt_StockSMA`)**
    - Transforms and cleans the raw data into analytics-ready tables
    - Runs dbt commands against Snowflake  
    - Builds cleaned/curated tables from the raw data  
@@ -45,7 +45,7 @@ The project demonstrates a modern cloud-based pipeline following an Extract → 
    - Cleans the data using Pandas  
    - Loads the data into Snowflake (`raw.lab2_market_data`)
 
-2. **Airflow DAG #2 (dbtDAG)**  
+2. **Airflow DAG #2 (dbt_StockSMA)**  
    - Runs dbt commands against Snowflake  
    - Builds cleaned/curated tables from the raw data  
    - Optional data tests validate the transformed outputs
@@ -119,7 +119,7 @@ This will:
 Trigger:
 
 ```
-dbtDAG
+dbt_StockSMA
 ```
 
 This will:
@@ -128,7 +128,7 @@ This will:
 - Optionally execute tests (`dbt test`)  
 - Build transformed tables in Snowflake  
 
-You can also set up a dependency so `dbtDAG` runs automatically after `180DayStockData`.
+You can also set up a dependency so `dbt_StockSMA` runs automatically after `180DayStockData`. For now it is scheduled to run daily in Airflow, 10 minutes after `180DayStockData`.
 
 
 ## Validation
@@ -146,7 +146,7 @@ Query should return a record count of 180 for each stock symbol.
 
 ```sql
 SELECT *
-FROM analytics.stock_summary
+FROM analytics.stock_sma_summary
 LIMIT 20
 ```
 
@@ -165,5 +165,5 @@ The query returns the first 20 transformed stock records with columns such as `S
 
 - Expand to support a dynamic list of ticker symbols  
 - Add incremental loading logic  
-- Automate `dbtDAG` to run after ETL completion   
+- Automate `dbt_StockSMA` to run after ETL completion   
 - Add CI/CD for dbt using GitHub Actions  
